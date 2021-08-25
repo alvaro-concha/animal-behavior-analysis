@@ -1,7 +1,7 @@
 <img align="right"
     src="mouse_behavior_analysis_logo.png"
     alt="Mouse Behavior Analysis Logo"
-    width="10p" />
+    width="10%" />
 
 # Mouse Behavior Analysis
 
