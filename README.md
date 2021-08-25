@@ -1,5 +1,5 @@
 <img align="right"
-    src="mouse_behavior_analysis_logo.png"
+    src="mouse_behavior_analysis_logo.svg"
     alt="Mouse Behavior Analysis Logo"
     width="30%" />
 
