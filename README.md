@@ -1,8 +1,8 @@
 <img align="right"
-    src="mouse_behavior_analysis_logo.svg"
-    alt="Mouse Behavior Analysis Logo"
+    src="animal_behavior_analysis_logo.svg"
+    alt="Animal Behavior Analysis Logo"
     width="30%" />
 
-# Mouse Behavior Analysis
+# Animal Behavior Analysis
 
 Neurobiology of Movement Lab, Medical Physics Dept, Bariloche Atomic Centre (CAB), CNEA
