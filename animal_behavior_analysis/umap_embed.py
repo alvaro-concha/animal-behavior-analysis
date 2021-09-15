@@ -30,6 +30,7 @@ def get_umap_embeddings(dep_pickle_paths, target_pickle_paths):
     )
     (_, mean, var) = read_pickle(dep_pickle_paths["stat"])
     angs = (angs - mean) / np.sqrt(var)
+    write_pickle(angs, target_pickle_paths["ang_sample"])
     del dep_pickle_paths["ang"], dep_pickle_paths["stat"], _, mean, var
     embedding = UMAP(
         metric=config.EMB_METRIC,
@@ -39,16 +40,19 @@ def get_umap_embeddings(dep_pickle_paths, target_pickle_paths):
         verbose=True,
     ).fit(angs)
     write_pickle(embedding, target_pickle_paths["emb_ang"])
+    write_pickle(embedding.embedding_, target_pickle_paths["out_ang"])
     del angs, target_pickle_paths["emb_ang"], embedding
 
+    pca = read_pickle(dep_pickle_paths["pca"])
     wavs = np.concatenate(
         [
-            read_pickle(path)[:: config.EMB_WAV_SUBSAMPLE_EVERY]
+            pca.transform(read_pickle(path)[:: config.EMB_WAV_SUBSAMPLE_EVERY])[
+                :, : config.EMB_WAV_PCA_NUM_COMPONENTS
+            ]
             for path in dep_pickle_paths["wav"]
         ]
     )
-    pca = read_pickle(dep_pickle_paths["pca"])
-    wavs = pca.transform(wavs)[:, : config.EMB_WAV_PCA_NUM_COMPONENTS]
+    write_pickle(wavs, target_pickle_paths["wav_sample"])
     del dep_pickle_paths["wav"], dep_pickle_paths["pca"], pca
     embedding = UMAP(
         metric=config.EMB_METRIC,
@@ -58,6 +62,7 @@ def get_umap_embeddings(dep_pickle_paths, target_pickle_paths):
         verbose=True,
     ).fit(wavs)
     write_pickle(embedding, target_pickle_paths["emb_wav"])
+    write_pickle(embedding.embedding_, target_pickle_paths["out_wav"])
     del wavs, target_pickle_paths["emb_wav"], embedding
 
 
