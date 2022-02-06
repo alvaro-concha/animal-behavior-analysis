@@ -46,7 +46,7 @@ The project has the following structure:
       |- README.md
       |- requirements.txt
       |- setup.py
-      |- animal\_behavior\_analysis/
+      |- animal_behavior_analysis/
          |- bundle_edges.py
          |- config_dodo.py
          |- config.py
