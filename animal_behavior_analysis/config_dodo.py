@@ -27,23 +27,51 @@ from itertools import product
 
 ABS_PATH = Path(__file__).parent.parent.parent.absolute()
 SPR_PATH = ABS_PATH / "Data/Spreadsheets"  # Original source spreadsheets
-MED_PATH = ABS_PATH / "Data/Positions/Median"  # xys, lhs and perspective matrices
-KAL_PATH = ABS_PATH / "Data/Positions/Kalman"  # xys
+MED_PATH = ABS_PATH / "Data/Positions/Median"  # Median filter xys, lhs and perspectives
+KAL_PATH = ABS_PATH / "Data/Positions/Kalman"  # Kalman filter xys
+QNT_PATH = ABS_PATH / "Data/Positions/Quantile"  # Quantile filter xys
+IDX_PATH = ABS_PATH / "Data/Features/Subsample Indices"  # Subsample indices
+STP_PATH = ABS_PATH / "Data/Features/Steps and Poses"  # Steps and poses from xys
 ANG_PATH = ABS_PATH / "Data/Features/Angles"  # Joint angles from xys
 WAV_PATH = ABS_PATH / "Data/Features/Wavelets"  # Wavelet spectra from joint angles
-EMB_PATH = ABS_PATH / "Data/Ethograms/Embeddings"  # UMAP embeddings
-OUT_PATH = ABS_PATH / "Data/Ethograms/Outcomes"  # UMAP outcomes
-CLU_PATH = ABS_PATH / "Data/Ethograms/Clusterers"  # HDBSCAN clusterers
-LAB_PATH = ABS_PATH / "Data/Ethograms/Labels"  # Cluster labels
-AGG_PATH = ABS_PATH / "Data/Aggregate"  # Aggregated data: labels, subjects, etc
+INF_PATH = ABS_PATH / "Data/Features/Information"  # Mutual information and entropy
+EMB_PATH = ABS_PATH / "Data/Embeddings/Embedders"  # UMAP embedders
+OUT_PATH = ABS_PATH / "Data/Embeddings/Outcomes"  # UMAP outcomes
+WAT_PATH = ABS_PATH / "Data/Embeddings/Watershed"  # Watershed segmentation
+LAB_PATH = ABS_PATH / "Data/Embeddings/Labels"  # Behavior labels
+AGG_PATH = ABS_PATH / "Data/Aggregate"  # Aggregated data for analysis
+MTR_PATH = ABS_PATH / "Data/Metrics"  # Metrics (size, performance, aggregate, etc.)
 MET_PATH = ABS_PATH / "Data/Metadata"  # Spreadsheet paths
 VID_PATH = ABS_PATH / "Data/Videos"  # Rotarod videos
 ANI_PATH = ABS_PATH / "Animations"  # Output animations
 FIG_PATH = ABS_PATH / "Figures"  # Output figures
+QUA_PATH = ABS_PATH / "Figures/Quality"  # Quality control
+SPR_PATH.mkdir(parents=True, exist_ok=True)
+MED_PATH.mkdir(parents=True, exist_ok=True)
+KAL_PATH.mkdir(parents=True, exist_ok=True)
+QNT_PATH.mkdir(parents=True, exist_ok=True)
+IDX_PATH.mkdir(parents=True, exist_ok=True)
+STP_PATH.mkdir(parents=True, exist_ok=True)
+ANG_PATH.mkdir(parents=True, exist_ok=True)
+WAV_PATH.mkdir(parents=True, exist_ok=True)
+INF_PATH.mkdir(parents=True, exist_ok=True)
+EMB_PATH.mkdir(parents=True, exist_ok=True)
+OUT_PATH.mkdir(parents=True, exist_ok=True)
+WAT_PATH.mkdir(parents=True, exist_ok=True)
+LAB_PATH.mkdir(parents=True, exist_ok=True)
+AGG_PATH.mkdir(parents=True, exist_ok=True)
+MTR_PATH.mkdir(parents=True, exist_ok=True)
+MET_PATH.mkdir(parents=True, exist_ok=True)
+VID_PATH.mkdir(parents=True, exist_ok=True)
+ANI_PATH.mkdir(parents=True, exist_ok=True)
+FIG_PATH.mkdir(parents=True, exist_ok=True)
+QUA_PATH.mkdir(parents=True, exist_ok=True)
 
 ################################ Subjetct Data #################################
 
-MOUSE_LIST = [295, 297, 298, 329, 330]
+MOUSE_LIST = [262, 263, 264, 265, 282, 295, 297, 298, 329, 330]
+HP_MOUSE_LIST = [265, 297, 329]
+LP_MOUSE_LIST = [262, 263, 264, 282, 295, 298, 330]
 DAY_LIST = [1, 2, 3, 4, 5]
 TRIAL_LIST = [1, 2, 3, 4, 5]
 CAM_LIST = [1, 2]  # FRONT_CAM = 1, BACK_CAM = 2
