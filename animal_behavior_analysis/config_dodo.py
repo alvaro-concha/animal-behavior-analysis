@@ -43,7 +43,6 @@ AGG_PATH = ABS_PATH / "Data/Aggregate"  # Aggregated data for analysis
 MTR_PATH = ABS_PATH / "Data/Metrics"  # Metrics (size, performance, aggregate, etc.)
 MET_PATH = ABS_PATH / "Data/Metadata"  # Spreadsheet paths
 VID_PATH = ABS_PATH / "Data/Videos"  # Rotarod videos
-ANI_PATH = ABS_PATH / "Animations"  # Output animations
 FIG_PATH = ABS_PATH / "Figures"  # Output figures
 QUA_PATH = ABS_PATH / "Figures/Quality"  # Quality control
 SPR_PATH.mkdir(parents=True, exist_ok=True)
@@ -63,7 +62,6 @@ AGG_PATH.mkdir(parents=True, exist_ok=True)
 MTR_PATH.mkdir(parents=True, exist_ok=True)
 MET_PATH.mkdir(parents=True, exist_ok=True)
 VID_PATH.mkdir(parents=True, exist_ok=True)
-ANI_PATH.mkdir(parents=True, exist_ok=True)
 FIG_PATH.mkdir(parents=True, exist_ok=True)
 QUA_PATH.mkdir(parents=True, exist_ok=True)
 

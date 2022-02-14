@@ -7,6 +7,8 @@
 
 Neurobiology of Movement Lab, Medical Physics Department, Bariloche Atomic Centre, CNEA
 
+[![Animal behavior analysis](http://img.youtube.com/vi/fmzGsaHlQmQ/0.jpg)](http://www.youtube.com/watch?v=fmzGsaHlQmQ&list=PLRCempM9WkGbnWppe3VPWEt_MfC51Xztp)
+
 ## Introduction
 
 `animal-behavior-analysis` is a Python repository to produce animal behavior embeddings and behavior labels in an unsupervised way.
@@ -58,6 +60,8 @@ The project has the following structure:
          |- transitions.ipynb
          |- umap_embed.py
          |- umap_paso_pose.ipynb
+         |- umap_video.ipynb
+         |- umap_video.py
          |- umap_wavelet.ipynb
          |- utilities.py
          |- watershed_segment.py
