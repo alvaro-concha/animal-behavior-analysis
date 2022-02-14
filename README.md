@@ -7,7 +7,8 @@
 
 Neurobiology of Movement Lab, Medical Physics Department, Bariloche Atomic Centre, CNEA
 
-[![Animal behavior analysis](http://img.youtube.com/vi/fmzGsaHlQmQ/0.jpg)](http://www.youtube.com/watch?v=fmzGsaHlQmQ&list=PLRCempM9WkGbnWppe3VPWEt_MfC51Xztp)
+<a href="http://www.youtube.com/watch?v=fmzGsaHlQmQ&list=PLRCempM9WkGbnWppe3VPWEt_MfC51Xztp" target="_blank"><img align="center" src="http://img.youtube.com/vi/fmzGsaHlQmQ/0.jpg" 
+alt="Animal behavior analysis" width="100%" border="10" /></a>
 
 ## Introduction
 
