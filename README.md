@@ -1,16 +1,19 @@
+# animal-behavior-analysis
 <img align="right"
     src="logo.svg"
     alt="Animal Behavior Analysis Logo"
-    width="30%" />
-
-# animal-behavior-analysis
+    width="15%" />
+<br>
 
 Neurobiology of Movement Lab, Medical Physics Department, Bariloche Atomic Centre, CNEA
 
 ## Showcase video
 
-<a href="http://www.youtube.com/watch?v=fmzGsaHlQmQ&list=PLRCempM9WkGbnWppe3VPWEt_MfC51Xztp" target="_blank"><img align="center" src="http://img.youtube.com/vi/fmzGsaHlQmQ/0.jpg" 
-alt="Animal behavior analysis" width="100%" border="10" /></a>
+<div align="center">
+    <a href="http://www.youtube.com/watch?v=fmzGsaHlQmQ&list=PLRCempM9WkGbnWppe3VPWEt_MfC51Xztp" target="_blank">
+        <img src="https://img.youtube.com/vi/fmzGsaHlQmQ/0.jpg" alt="Animal behavior analysis" width="50%">
+    </a>
+</div>
 
 ## Introduction
 
